@@ -1,0 +1,90 @@
+.PokemonDescription {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 10px;
+  align-content: center;
+  padding: 10px;
+}
+
+.PokemonDescription img {
+  width: 100%;
+}
+
+.PokemonDescription .pokemon-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.PokemonDescription .name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.PokemonDescription .description {
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  font-size: 1rem;
+  max-height: 45vh;
+  overflow-y: scroll;
+  background-color: rgba(192, 192, 192, 0.5);
+  border-radius: 5px;
+}
+
+.PokemonDescription .description::-webkit-scrollbar {
+  display: none;
+}
+
+.PokemonDescription .pokemon-description .types {
+  display: flex;
+  gap: 5px;
+}
+
+.PokemonDescription .pokemon-description .types div {
+  width: 50px;
+  padding: 3px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.PokemonDescription .go-back {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px 0 0 auto;
+  padding: 3px 10px;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .PokemonDescription {
+    grid-template-columns: 40% 60%;
+    padding: 20px;
+  }
+
+  .PokemonDescription .name {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .PokemonDescription .description {
+    margin: 10px 20px 20px 0;
+    font-size: 1.3rem;
+  }
+
+  .PokemonDescription .pokemon-description .types div {
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  .PokemonDescription .go-back {
+    margin: 20px 50px 0 auto;
+  }
+}

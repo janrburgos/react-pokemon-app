@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-image: url("assets/rotom.jpg");
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+}

@@ -1,0 +1,22 @@
+.PokemonBox {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    var(--first-bg-color) 50%,
+    var(--second-bg-color) 50%
+  );
+}
+
+.PokemonBox p {
+  font-weight: bold;
+}
+
+.PokemonBox .pokemon-name {
+  text-transform: uppercase;
+}

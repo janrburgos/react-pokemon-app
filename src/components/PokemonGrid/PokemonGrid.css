@@ -1,0 +1,40 @@
+.PokemonGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  align-content: flex-start;
+  height: 90%;
+  margin: auto 20px auto 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  overflow-y: scroll;
+}
+
+.PokemonGrid img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .PokemonGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .PokemonGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .PokemonGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .PokemonGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
